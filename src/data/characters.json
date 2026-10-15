@@ -1,1 +1,263 @@
+[
+  {
+    "id": "choso",
+    "name": "Choso",
+    "color": "#9b1c1c",
+    "range": "media-longa",
+    "preferredDistance": 300,
+    "hp": 850,
+    "energy": 1000,
+    "energyRegen": 18,
+    "speed": 2.6,
+    "reflex": 0.7,
+    "taijutsu": {
+      "damage": 20,
+      "cooldown": 650,
+      "style": "contra-ataque defensivo"
+    },
+    "abilities": [
+      {
+        "id": "blood",
+        "name": "Manipulação de Sangue",
+        "type": "bloodShot",
+        "damagePerUnit": 50,
+        "costPerUnit": 75,
+        "maxUnits": 3,
+        "cooldown": 2400
+      },
+      {
+        "id": "scale",
+        "name": "Escama Vermelha",
+        "type": "buff",
+        "damage": 0,
+        "cost": 100,
+        "once": true,
+        "mult": {
+          "damage": 1.3,
+          "speed": 1.4,
+          "reflex": 1.25
+        }
+      },
+      {
+        "id": "pierce",
+        "name": "Sangue Perfurante",
+        "type": "beam",
+        "damage": 300,
+        "costPerTick": 20,
+        "tickMs": 500,
+        "durationMs": 1500,
+        "cooldown": 5000
+      },
+      {
+        "id": "nova",
+        "name": "Supernova",
+        "type": "orbs",
+        "damage": 40,
+        "cost": 150,
+        "count": 5,
+        "stunMs": 900,
+        "cooldown": 7000
+      }
+    ],
+    "blackFlashChance": 0.03
+  },
+  {
+    "id": "yuji",
+    "name": "Yuji Itadori",
+    "color": "#1a1a1a",
+    "range": "curta",
+    "preferredDistance": 30,
+    "hp": 950,
+    "energy": 700,
+    "energyRegen": 14,
+    "speed": 3,
+    "reflex": 0.85,
+    "taijutsu": {
+      "damage": 32,
+      "cooldown": 380,
+      "style": "pressão agressiva em combo"
+    },
+    "abilities": [
+      {
+        "id": "fist",
+        "name": "Punho Divergente",
+        "type": "fist",
+        "damage": 125,
+        "cost": 60,
+        "stunMs": 700,
+        "knockback": 14,
+        "cooldown": 2500
+      },
+      {
+        "id": "blood",
+        "name": "Manipulação de Sangue Mediana",
+        "type": "bloodShot",
+        "damagePerUnit": 40,
+        "costPerUnit": 50,
+        "maxUnits": 1,
+        "cooldown": 2200
+      },
+      {
+        "id": "pierce",
+        "name": "Sangue Perfurante",
+        "type": "beam",
+        "damage": 300,
+        "costPerTick": 20,
+        "tickMs": 500,
+        "durationMs": 1500,
+        "cooldown": 7000
+      },
+      {
+        "id": "shrine",
+        "name": "Santuário",
+        "type": "slash",
+        "damagePerUnit": 50,
+        "costPerUnit": 50,
+        "maxUnits": 4,
+        "cooldown": 1800
+      },
+      {
+        "id": "simple",
+        "name": "Domínio Simples",
+        "type": "simpleDomain",
+        "cost": 150,
+        "durationMs": 2500,
+        "cooldown": 6000
+      },
+      {
+        "id": "domain",
+        "name": "Expansão de Domínio",
+        "type": "domain",
+        "damage": 500,
+        "cost": 400,
+        "castMs": 700,
+        "cooldown": 20000
+      }
+    ],
+    "blackFlashChance": 1
+  },
+  {
+    "id": "gojo",
+    "name": "Satoru Gojo",
+    "color": "#3b82f6",
+    "range": "variada",
+    "preferredDistance": 200,
+    "hp": 1450,
+    "energy": 1250,
+    "energyRegen": 16,
+    "speed": 3.5,
+    "reflex": 0.95,
+    "costMult": 0.5,
+    "taijutsu": {
+      "damage": 28,
+      "cooldown": 420,
+      "style": "técnica refinada e esquiva"
+    },
+    "abilities": [
+      {
+        "id": "infinity",
+        "name": "Ilimitado",
+        "type": "infinity",
+        "damage": 0,
+        "cost": 50,
+        "durationMs": 2500,
+        "cooldown": 5000
+      },
+      {
+        "id": "simple",
+        "name": "Domínio Simples",
+        "type": "simpleDomain",
+        "cost": 150,
+        "durationMs": 2500,
+        "cooldown": 6000
+      },
+      {
+        "id": "blue",
+        "name": "Azul",
+        "type": "blue",
+        "damage": 250,
+        "cost": 150,
+        "cooldown": 4000
+      },
+      {
+        "id": "red",
+        "name": "Vermelho",
+        "type": "red",
+        "damage": 350,
+        "cost": 250,
+        "cooldown": 5000
+      },
+      {
+        "id": "purple",
+        "name": "Vazio Roxo",
+        "type": "purple",
+        "damage": 600,
+        "cost": 400,
+        "castMs": 1200,
+        "cooldown": 14000
+      },
+      {
+        "id": "domain",
+        "name": "Vazio Ilimitado",
+        "type": "domain",
+        "damage": 0,
+        "cost": 800,
+        "castMs": 900,
+        "overloadMs": 2500,
+        "cooldown": 25000
+      }
+    ],
+    "blackFlashChance": 0.055
+  },
+  {
+    "id": "yuki",
+    "name": "Yuki Tsukumo",
+    "color": "#e5c65b",
+    "range": "curta",
+    "preferredDistance": 30,
+    "hp": 1000,
+    "energy": 1200,
+    "energyRegen": 16,
+    "speed": 3.1,
+    "reflex": 0.85,
+    "taijutsu": {
+      "damage": 35,
+      "cooldown": 500,
+      "style": "Fúria Estelar"
+    },
+    "companion": {
+      "name": "Garuda",
+      "hp": 500
+    },
+    "abilities": [
+      {
+        "id": "star",
+        "name": "Fúria Estelar",
+        "type": "starRage",
+        "damagePerUnit": 5,
+        "costPerUnit": 20
+      },
+      {
+        "id": "blackHole",
+        "name": "BURACO NEGRO",
+        "type": "blackHole",
+        "once": true
+      },
+      {
+        "id": "simple",
+        "name": "Domínio Simples",
+        "type": "simpleDomain",
+        "cost": 150,
+        "durationMs": 2500,
+        "cooldown": 6000
+      }
+    ],
+    "blackFlashChance": 0.03
+  }
+]
 
+]
+]
+nce": 0.03
+  }
+]
